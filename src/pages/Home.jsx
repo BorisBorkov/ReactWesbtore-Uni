@@ -1,8 +1,8 @@
 function Home() {
   return (
     <div className="page">
-      <h1>Welcome to the Webstore</h1>
-      <p>Browse our products and find what you need.</p>
+      <h1>Welcome to TechStore</h1>
+      <p>Your one-stop shop for laptops, smartphones, and tablets.</p>
     </div>
   )
 }
