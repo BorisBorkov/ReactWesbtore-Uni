@@ -22,7 +22,10 @@ function Products() {
 
   return (
     <div className="page">
-      <h1>Products</h1>
+      <div className="products-header">
+        <h1>Our Products</h1>
+        <p>Showing {products.length} products across laptops, smartphones, and tablets.</p>
+      </div>
       <div className="product-grid">
         {products.map(product => (
           <ProductCard key={product.id} product={product} />

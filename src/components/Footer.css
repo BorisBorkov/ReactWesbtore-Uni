@@ -1,0 +1,38 @@
+.footer {
+  background-color: #1a1a2e;
+  color: #ccc;
+  margin-top: 3rem;
+}
+
+.footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 2rem;
+  padding: 2.5rem 2rem;
+}
+
+.footer-section h4 {
+  color: #fff;
+  font-size: 0.95rem;
+  margin-bottom: 0.6rem;
+}
+
+.footer-section p {
+  font-size: 0.85rem;
+  line-height: 1.8;
+  color: #999;
+}
+
+.footer-section a {
+  display: block;
+  font-size: 0.85rem;
+  line-height: 1.8;
+  color: #999;
+  transition: color 0.2s;
+}
+
+.footer-section a:hover {
+  color: #4ea8ff;
+}
