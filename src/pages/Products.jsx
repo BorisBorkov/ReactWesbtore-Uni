@@ -6,14 +6,22 @@ function Products() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    Promise.all([
-      fetch('https://dummyjson.com/products/category/laptops').then(res => res.json()),
-      fetch('https://dummyjson.com/products/category/smartphones').then(res => res.json()),
-      fetch('https://dummyjson.com/products/category/tablets').then(res => res.json()),
-    ]).then(([laptops, phones, tablets]) => {
-      setProducts([...laptops.products, ...phones.products, ...tablets.products])
+    async function loadProducts() {
+      const response1 = await fetch('https://dummyjson.com/products/category/laptops')
+      const laptops = await response1.json()
+
+      const response2 = await fetch('https://dummyjson.com/products/category/smartphones')
+      const phones = await response2.json()
+
+      const response3 = await fetch('https://dummyjson.com/products/category/tablets')
+      const tablets = await response3.json()
+
+      const allProducts = laptops.products.concat(phones.products, tablets.products)
+      setProducts(allProducts)
       setLoading(false)
-    })
+    }
+
+    loadProducts()
   }, [])
 
   if (loading) {

@@ -5,7 +5,7 @@ function ProductCard({ product }) {
       <h3>{product.title}</h3>
       <div className="product-info">
         <span className="product-price">${product.price}</span>
-        <span className="product-rating">{'★'} {product.rating}</span>
+        <span className="product-rating">★ {product.rating}</span>
       </div>
     </div>
   )
