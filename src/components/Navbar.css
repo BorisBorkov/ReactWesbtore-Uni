@@ -31,3 +31,41 @@
 .navbar-links a:hover {
   color: #646cff;
 }
+
+.navbar-auth {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar-user {
+  color: #4ea8ff;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.navbar-auth-link {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar-auth-link:hover {
+  color: #4ea8ff;
+}
+
+.navbar-logout-btn {
+  background-color: transparent;
+  color: #e0e0e0;
+  border: 1px solid #e0e0e0;
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.navbar-logout-btn:hover {
+  background-color: #4ea8ff;
+  border-color: #4ea8ff;
+  color: #fff;
+}
